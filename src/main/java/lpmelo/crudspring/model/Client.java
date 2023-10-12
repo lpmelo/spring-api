@@ -9,15 +9,15 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Cliente {
+public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String nome;
+    private String name;
 
-    @Column(length = 11)
+    @Column(length = 11, nullable = false)
     private String cpf;
 
     @Column(length = 9)
